@@ -1,6 +1,6 @@
+from time import sleep
 import numpy as np
 from rich.console import Console
-from time import sleep
 from database import update_db, get_whole_count, get_average_guess_count
 
 console = Console()
