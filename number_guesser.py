@@ -8,7 +8,7 @@ console = Console()
 count = 0
 
 min_guess_num = 1
-max_guess_num = 500000000
+max_guess_num = 50000000
 
 answer = np.random.randint(min_guess_num, max_guess_num)
 
@@ -23,7 +23,7 @@ while not correct:
 		console.print("[red]Lower.[/red]")
 		max_guess_num = guess
 	elif guess < answer:
-		console.print("[red]Higher.[/red]")
+		console.print("[yellow]Higher.[/yellow]")
 		min_guess_num = guess
 	else:
 		correct = True
